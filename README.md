@@ -3,3 +3,4 @@
 ##### List of challenges
 
 - Diagonal Difference
+- Plus minus
