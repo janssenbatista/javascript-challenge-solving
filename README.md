@@ -4,3 +4,4 @@
 
 - Diagonal Difference
 - Plus minus
+- Staircase
