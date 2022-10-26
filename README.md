@@ -5,3 +5,4 @@
 - Diagonal Difference
 - Plus minus
 - Staircase
+- Mini-max Sum
