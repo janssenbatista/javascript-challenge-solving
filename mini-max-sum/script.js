@@ -1,39 +1,10 @@
 function minMaxSum(arr) {
-  let counter = 0;
-  let minSum = Number.MAX_SAFE_INTEGER;
-  let minSumTemp = 0;
-  let maxSum = Number.MIN_SAFE_INTEGER;
-  let maxSumTemp = 0;
-  while (counter < arr.length) {
-    for (let index = 0; index < arr.length; index++) {
-      if (counter === index) {
-        continue;
-      }
-      minSumTemp += arr[index];
-    }
-    if (minSumTemp < minSum) {
-      minSum = minSumTemp;
-    }
-    minSumTemp = 0;
-    counter++;
-  }
-  counter = 0;
-  while (counter < arr.length) {
-    for (let index = 0; index < arr.length; index++) {
-      if (counter === index) {
-        continue;
-      }
-      maxSumTemp += arr[index];
-    }
-    if (maxSumTemp > maxSum) {
-      maxSum = maxSumTemp;
-    }
-    maxSumTemp = 0;
-    counter++;
-  }
+  arr.sort();
+  let minSum = arr.slice(0, arr.length - 1).reduce((n1, n2) => n1 + n2, 0);
+  let maxSum = arr.slice(1, arr.length).reduce((n1, n2) => n1 + n2, 0);
   console.log(minSum, maxSum);
 }
 
 // Test
-minMaxSum([1, 2, 3, 4, 5]);
-minMaxSum([1, 3, 5, 7, 9]);
+minMaxSum([1, 2, 3, 4, 5]); // should print: 10 14
+minMaxSum([1, 3, 5, 7, 9]); // should print: 16 24
