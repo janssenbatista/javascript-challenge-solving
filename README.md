@@ -2,14 +2,14 @@
 
 ##### List of challenges
 
-- Diagonal Difference
-- Plus minus
-- Staircase
-- Mini-max Sum
-- Birthday Cake Candles
-- Time Conversion
-- Grading Students
-- Apple and Orange
-- Number Line Jumps
-- Between Two Sets
+- <a href="/diagonal-difference">Diagonal Difference</a>
+- <a href="/plus-minus">Plus minus</a>
+- <a href="/staircase">Staircase</a>
+- <a href="/mini-max-sum">Mini-max Sum</a>
+- <a href="/birthday-cake-candles">Birthday Cake Candles</a>
+- <a href="/time-conversion">Time Conversion</a>
+- <a href="/grading-students">Grading Students</a>
+- <a href="/apple-and-orange">Apple and Orange</a>
+- <a href="/number-line-jumps">Number Line Jumps</a>
+- <a href="/between-two-sets">Between Two Sets</a>
 - <a href="/breaking-the-records">Breaking the Records</a>
