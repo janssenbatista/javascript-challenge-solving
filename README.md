@@ -14,3 +14,4 @@
 - <a href="/between-two-sets">Between Two Sets</a>
 - <a href="/breaking-the-records">Breaking the Records</a>
 - <a href="/subarray-division">Subarray Division</a>
+- <a href="/divisible-sum-pairs">Divisible Sum Pairs</a>
