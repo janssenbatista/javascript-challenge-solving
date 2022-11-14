@@ -1,6 +1,6 @@
 ### Solving some [HackerRank](https://www.hackerrank.com) website challenges
 
-##### List of challenges
+#### List of challenges
 
 - <a href="/diagonal-difference">Diagonal Difference</a>
 - <a href="/plus-minus">Plus minus</a>
