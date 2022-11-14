@@ -1,15 +1,13 @@
 function divisibleSumPairs(n, k, ar) {
   let numOfPairs = 0;
   let pointer = 1;
-  for (let index = 0; index < ar.length; index++) {
+  for (let index = 0; index < ar.length; index++, pointer = index + 1) {
     while (pointer <= ar.length) {
       if ((ar[index] + ar[pointer]) % k === 0) {
         numOfPairs++;
-        // break;
       }
       pointer++;
     }
-    pointer = index + 2;
   }
   return numOfPairs;
 }
