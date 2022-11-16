@@ -16,22 +16,20 @@ function migratoryBirds(arr) {
     }
     counter = 0;
   });
-  // Find the position of the most frequently bird
-  let max = totalOfEachElement[0];
-  let position = -1;
-  for (const i in totalOfEachElement) {
-    if (totalOfEachElement[i] > max) {
-      max = totalOfEachElement[i];
-      position = i;
-    }
-    if (totalOfEachElement[i] === max) {
-      position = i;
-    }
-  }
+  let position = totalOfEachElement.reduce(
+    (previousIndex, nextElement, currentIndex) =>
+      totalOfEachElement[previousIndex] >= nextElement
+        ? previousIndex
+        : currentIndex,
+    0
+  );
   const mostFrequentlyBirds = distinctElements[position];
   return mostFrequentlyBirds;
 }
 
 // Test
-let _arr = [1, 2, 3, 3, 4, 1, 5, 1, 1, 6, 2, 2, 2, 2, 2, 2, 1, 1, 1, 2, 1, 2];
+let _arr = [
+  1, 2, 3, 3, 4, 1, 5, 1, 1, 6, 2, 2, 2, 2, 2, 2, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1,
+  1, 1,
+];
 console.log(migratoryBirds(_arr)); // should print 1
