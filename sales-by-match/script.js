@@ -1,4 +1,4 @@
-function numbers(n, ar) {
+function sockMerchant(n, ar) {
   // find unique elements
   let unique = ar.filter((value, index, arr) => arr.indexOf(value) === index);
   // array to store the total of each element
@@ -17,4 +17,4 @@ function numbers(n, ar) {
 }
 
 // Test
-console.log(numbers(8, [1, 2, 1, 2, 3, 1, 1, 3])); // should print 4
+console.log(sockMerchant(8, [1, 2, 1, 2, 3, 1, 1, 3])); // should print 4
