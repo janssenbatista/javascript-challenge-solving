@@ -17,3 +17,4 @@
 - <a href="/divisible-sum-pairs">Divisible Sum Pairs</a>
 - <a href="/migratory-birds">Migratory Birds</a>
 - <a href="/day-of-the-programmer">Day of the Programmer</a>
+- <a href="/bill-division">Bill Division</a>
